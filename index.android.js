@@ -11,21 +11,12 @@ var {
   Text,
   View,
 } = React;
+var AppContainer = require('./components/app_container');
 
 var CriticalMass = React.createClass({
   render: function() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <AppContainer />
     );
   }
 });
